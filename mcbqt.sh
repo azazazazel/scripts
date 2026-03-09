@@ -85,7 +85,7 @@ If you want to quit, type \"quit\".
 			echo "Bye!"
 			exit 0 #normal exit code
 
-		if [ $actchoice = "milk" ]; then
+		elif [ $actchoice = "milk" ]; then
 			echo "lady macbeth milkies..."
 			
 		elif [ $actchoice = "all" ]; then
