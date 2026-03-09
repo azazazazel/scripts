@@ -49,28 +49,28 @@ while true; do
 	"which, being taught, return to plague th’ inventor"
 	"prick the sides of my intent, but only vaulting ambition"
 	"hide what the false heart doth know"
-	"my father as he slept, I had done 't"
-	"your colour, but I shame to wear a heart so white"
+	"my father as he slept, i had done 't"
+	"your colour, but i shame to wear a heart so white"
 	"clears us of this deed"
-	"hath broke ope the Lord's anointed temple, and hence stole the life o'th' building"
+	"hath broke ope the lord's anointed temple, and hence stole the life o'th' building"
 	"all's spent, where our desire is got without content"
 	"scorpions is my mind, dear wife"
 	"of the knowledge, dearest chuck"
 	"cribbed, confined, bound by saucy doubts and fears"
 	"in so far, that should I wade no more, returning were as tedious as go o'er"
 	"and trouble, fire burn and cauldron bubble"
-	"Macduff, beware the Thane of Fife"
+	"macduff, beware the thane of fife"
 	"woman born shall harm Macbeth"
-	"vanquished be, until Great Birnam wood to high Dunsinane hill shall come against him"
-	"spot, out, I say"
-	"All the perfumes of Arabia will not sweeten this little hand"
+	"vanquished be, until great birnam wood to high dunsinane hill shall come against him"
+	"spot, out, i say"
+	"all the perfumes of arabia will not sweeten this little hand"
 	"divine than the physician"
 	"do breed unnatural troubles"
-	"As honour, love, obedience, troops of friends, I must not look to have, but in their stead curses, not loud but deep, mouth-honour, breath. Which the poor heart would fain deny and dare not"
+	"As honour, love, obedience, troops of friends, i must not look to have, but in their stead curses, not loud but deep, mouth-honour, breath. Which the poor heart would fain deny and dare not"
 	"bones my flesh be hacked"
 	"full with horrors"
 	"butcher and his fiend-like queen"
-	"that struts and frets his hour upon the stage and then is heard no more. It is a tale told by an idiot, full of sound and fury, signifying nothing"
+	"that struts and frets his hour upon the stage and then is heard no more. it is a tale told by an idiot, full of sound and fury, signifying nothing"
 	)
 
 	echo "Welcome to the Macbeth Key Quote Tester, BASH EDITION!!
@@ -124,7 +124,7 @@ If you want to quit, type \"quit\".
 		read -p "#$quotesanswered: ${quotestart[$quotenum]}" answer
 		lowercaseanswer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 		echo $lowercaseanswer
-		echo $
+		echo ${quoteend[$quotenum]}
 		if [ "$lowercaseanswer" = "${quoteend[$quotenum]}" ]; then
 			result=$((result+1))
 		fi
@@ -141,7 +141,7 @@ If you want to quit, type \"quit\".
 
 	read -p "Quote test finished. Results: $result/$quotesanswered. $judgement.
 Try Again?
-Yes/No" doyouwannaclose
+Yes/No: " doyouwannaclose
 	lowercasedywc=$(echo "$doyouwannaclose" | tr '[:upper:]' '[:lower:]')
 	if [ $lowercasedywc != "yes" ]; then
 		exit 0
